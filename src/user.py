@@ -15,13 +15,6 @@ class User:
     def getUser(self):
         return f"{self.nick} {self.host} {self.clientName}"
     
-    def setNick(self, nick: str, nickList: list[str]):
-        if nick in nickList:
-            self.connection("Nick in use")
-            return False
-
-        self.nick = nick
-        return True
 
     def setCurrentChannel(self, channelName: str):
         self.currentChannel = channelName

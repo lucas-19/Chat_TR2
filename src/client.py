@@ -51,5 +51,5 @@ class Client:
         self.running = False
         self.tcpSocket.close()
 
-client = Client("127.0.0.1", 6500, "Lucas", "luckboy13")
+client = Client("127.0.0.1", 4002, "Lucas", "luckboy13")
 # client.connect()
